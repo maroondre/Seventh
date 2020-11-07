@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/playerImg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".50"
+                    android:padding="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.50">
+
+                    <TextView
+                        android:id="@+id/playername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppinsregular"/>
+
+                    <TextView
+                        android:id="@+id/teamteam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Team"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppinsregular"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/viewMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Player >>"
+                        android:gravity="bottom|end"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bungeeregular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--The layout below is my ExpandableLayout -->
+            <LinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="3dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.50">
+
+                            <TextView
+                                android:id="@+id/playerTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/playerTeam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Team"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/teamImg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".50"
+                            android:padding="3dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="ShirtNumber"
+                                android:gravity="center"
+                                android:layout_weight="0.50"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/shirtNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="##"
+                                android:gravity="center"
+                                android:layout_weight="0.50"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Ratings"
+                                android:gravity="center"
+                                android:layout_weight="0.50"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.50"
+                                android:text="100.00"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Age"
+                                android:gravity="center"
+                                android:layout_weight="0.50"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/age"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.50"
+                                android:layout_height="wrap_content"
+                                android:text="50"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Weight"
+                                android:gravity="center"
+                                android:layout_weight="0.50"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/weight"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.50"
+                                android:text="55"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Height"
+                                android:gravity="center"
+                                android:layout_weight="0.50"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/height"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.50"
+                                android:text="0.00 cm"
+                                android:gravity="center"
+                                android:fontFamily="@font/poppinsregular"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/buttonplayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center">
+
+                            <View
+                                android:id="@+id/arrowplayer"
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:background="@drawable/arrowup"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="false"
+                                android:layout_alignParentEnd="false" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

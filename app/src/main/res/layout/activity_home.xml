@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary">
+
+        <View
+            android:layout_width="184dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fpnavbar"
+            android:fontFamily="@font/bungeeregular"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Events"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+            <com.github.islamkhsh.CardSliderViewPager
+                android:id="@+id/eView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardSlider_smallScaleFactor="0.9"
+                app:cardSlider_otherPagesWidth="36dp"
+                app:cardSlider_pageMargin="5dp">
+            </com.github.islamkhsh.CardSliderViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medias"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+            <TextView
+                android:id="@+id/medBut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View More>>"
+                android:layout_alignParentRight="true"
+                android:textColor="#B60101"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppinsregular"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teams"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

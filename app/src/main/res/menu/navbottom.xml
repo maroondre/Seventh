@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/one"
+            android:enabled="true"
+            android:title="PLAYERS"
+            android:icon="@drawable/players"/>
+
+        <item
+            android:id="@+id/two"
+            android:enabled="true"
+            android:title="EVENTS"
+            android:icon="@drawable/events_"/>
+
+        <item
+            android:id="@+id/three"
+            android:enabled="true"
+            android:title="MEDIA"
+            android:icon="@drawable/media"/>
+
+        <item
+            android:id="@+id/four"
+            android:enabled="true"
+            android:title="HOME"
+            android:icon="@drawable/home"/>
+
+</menu>
